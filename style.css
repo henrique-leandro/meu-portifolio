@@ -302,7 +302,7 @@ main{
 
 .skills-card{
    width: 200px;
-   height: 300px;
+   height: 320px;
    background-color: #343434;
    border-radius: 8px;
    box-shadow: 5px 8px 15px #888888;
@@ -320,7 +320,14 @@ main{
   font-size: 25px;
   color: #FAFAFA;
 }
-
+hr{
+    text-align: center;
+    width: 60%;
+    height: 2px;
+    border: none;
+    background-color: #008FFF;
+    margin: 0 auto;
+}
 .paragrafo-skills{
     margin-top: 10px;
     font-size: 20px;
