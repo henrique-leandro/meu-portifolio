@@ -38,6 +38,11 @@ header nav{
 .nav-list{
     list-style: none;
 }
+
+.menu-icon{
+    display: none;
+}
+
 .item-nav{
     display: inline-block;
     margin-right: 25px;
@@ -153,6 +158,7 @@ main{
 }
 .sobre{
     display: flex;
+    width: 100%;
     justify-content: center;
     padding: 20px 20px;
     background-color: #191919;
@@ -181,6 +187,7 @@ main{
     color: #b6aeae;
     font-size: 25px;
     line-height: 30px;
+    width: 700px;
 }
 
 .sobre-mim p span {
@@ -341,16 +348,22 @@ hr{
     padding: 70px 70px 60px 70px;
 }
 
+.box-contato{
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
 .contato h2{
     font-size: 50px;
     color: #FAFAFA;
-    margin: 70px 0px 30px 100px;
+    margin: 70px 50px 30px 50px;
 
 }
 
 .contacts-link{
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
 .contacts-link img{
@@ -359,8 +372,9 @@ hr{
 
 form{
     height: 390px;
-    width: 35%;
+    width: 390px;
     padding: 20px;
+    margin-right: 100px;
 
 }
 
@@ -411,4 +425,178 @@ footer{
 footer a {
     text-decoration: none;
     color: #008FFF;
+}
+
+@media (max-width: 1200px) {
+   
+    .s-home{
+        
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 40px 20px 100px 20px;
+        text-align: center;
+    }
+    .article-home {
+        margin-left: 0;
+    }
+
+    .article-home h1{
+        margin-left: 0;
+    }
+    .img-home{
+      right: 0;
+      bottom: 0;
+      max-width: 50%;
+      margin-bottom: 20px;
+
+    }
+    
+    .botoes-home{
+        justify-content:center;
+    }
+
+    .sobre{
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px 100px 20px;
+    }
+
+    .minha-foto {
+        display: none;
+    }
+
+    .skills {
+        gap: 40px;
+        margin: 20px;
+    }
+
+    .contato{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+    }
+
+    .contato h2 {
+        padding-right: 50px;
+    }
+
+    .form {
+      margin: 40px auto;
+    }
+}
+
+@media(max-width:950px) {
+    html {
+        font-size: 60%;
+    }
+
+    header {
+        padding: 15px 20px;
+        opacity: 0.99;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+   .projects-botoes{
+    justify-content: center;
+    gap: 20px;
+   }
+
+   .projects-botoes a {
+       padding: 15px 20px;
+       font-size: 15px;
+   }
+
+}
+
+@media(max-width:850px) {
+    .img-home {
+        max-width: 70%;
+    }
+    .sobre-mim h2 {
+        padding-left: 90px;
+    }
+    .sobre-mim p{
+        width: 100%;
+        padding-left: 90px;
+    }
+    .conhecimentos{
+        height: 900px;
+        
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:600px) {
+    html {
+        font-size: 60%;
+    }
+    .article-home {
+        width: 100%;
+        min-width: 350px;
+    }
+    .sobre-mim p{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .sobre-mim h2{
+        padding-left: 20px;
+    }
+    .project-info p{
+        font-size: 23px;
+    }
+
+    footer a {
+        max-width: 120px;
+    }
+}
+
+@media(max-width: 470px) {
+    html{
+        width: 100%;
+    }
+    .sobre-mim h2{
+        padding-left: 20px;
+    }
+    .sobre-mim{
+        padding: 20px 0px;
+    }
+    .projects-botoes a {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .skills {
+        gap: 15px;
+        margin-left: 40px;
+        display: grid;
+
+    }
+    .skills-card {
+     width: 170px;
+     height: 300px;
+    }
+    .skills-card img{
+      width: 100px;
+    } 
+   .paragrafo-skills{
+       font-size: 16px;
+   }
+    
+}
+
+@media(max-width: 420px) {  
+    html {
+        font-size: 48%;
+    }
+
+    .article-home {
+        width: 100%;
+    }
 }
