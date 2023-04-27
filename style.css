@@ -500,10 +500,6 @@ footer a {
         opacity: 0.99;
     }
 
-    .nav-list {
-        display: none;
-    }
-
    .projects-botoes{
     justify-content: center;
     gap: 20px;
@@ -542,6 +538,11 @@ footer a {
     html {
         font-size: 60%;
     }
+
+    nav {
+        display: none;
+    }
+
     .article-home {
         width: 100%;
         min-width: 350px;
